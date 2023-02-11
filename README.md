@@ -77,24 +77,24 @@ file). Then copy:
 	small3d/build/shaders to small3d-boilerplate/android/app/src/main/assets/resources/shaders
 
 Depending on whether you are using OpenGL ES or Vulkan, rename (or copy) one of the files 
-CMakeListsOpenGLES.txt, CMakeListsVulkan.txt in small3d-boilerplate/android/app 
-to CMakeLists.txt.
+`CMakeListsOpenGLES.txt`, `CMakeListsVulkan.txt` in `small3d-boilerplate/android/app` 
+to `CMakeLists.txt`.
 
-If building for Vulkan, change the defaultConfig/minSdk value to at least 26 in
-small3d-boilerplate/android/app/build.gradle
+If building for Vulkan, change the `defaultConfig/minSdk` value to at least 26 in
+`small3d-boilerplate/android/app/build.gradle`.
 
-Open and build the project in small3d-boilerplate/android with Android studio.
+Open and build the project in `small3d-boilerplate/android` with Android studio.
 
 # Building for iOS
 
 Build small3d for ios for your preferred API (Vulkan or OpenGL ES - see small3d README 
 file). Then, if using OpenGL ES (recommended) copy:
 
-  small3d/build/include to small3d-boilerplate/ios-opengles/deps/include
-  small3d/build/lib to small3d-boilerplate/ios-opengles/deps/lib
-  small3d/build/shaders to small3d-boilerplate/ios-opengles/game/resources1/shaders
+	small3d/build/include to small3d-boilerplate/ios-opengles/deps/include
+	small3d/build/lib to small3d-boilerplate/ios-opengles/deps/lib
+	small3d/build/shaders to small3d-boilerplate/ios-opengles/game/resources1/shaders
 
-Then open the project in small3d-boilerplate/ios-opengles using Xcode.
+Then open the project in `small3d-boilerplate/ios-opengles/game.xcodeproj` using Xcode.
 
 If using Vulkan copy:
 
@@ -102,4 +102,4 @@ If using Vulkan copy:
 	small3d/build/lib to small3d-boilerplate/ios/deps/lib
 	small3d/build/shaders to small3d-boilerplate/ios/game/resources1/shaders
 
-Then open the project in small3d-boilerplate/ios using Xcode.
+Then open the project in `small3d-boilerplate/ios/game.xcodeproj` using Xcode.
