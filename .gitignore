@@ -1,0 +1,25 @@
+#Backup files
+*\~
+*swp
+*blend[0-9]
+*\.bak
+
+#MacOS
+Thumbs.db
+.DS_Store
+
+#Emacs buffers
+\#*\#
+\.\#*
+
+/\.idea
+/\.vs
+
+/build
+/_build
+/Win32
+/bin
+/resources/shaders
+/ios/game/resources1/shaders
+/ios-opengles/game/resources1/shaders
+\.!*
