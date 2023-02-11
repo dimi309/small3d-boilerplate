@@ -2,7 +2,8 @@ small3d boilerplate
 ===================
 
 This repository is a basis for building games and other
-applications with the small3d game development library:
+applications with the small3d game development library
+(in C++):
 
 https://github.com/dimi309/small3d
 
