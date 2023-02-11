@@ -95,7 +95,7 @@ file). Then, if using OpenGL ES (recommended) copy:
 	small3d/build/lib to small3d-boilerplate/ios-opengles/deps/lib
 	small3d/build/shaders to small3d-boilerplate/ios-opengles/game/resources1/shaders
 
-Then open the project in `small3d-boilerplate/ios-opengles/game.xcodeproj` using Xcode.
+Then open the project `small3d-boilerplate/ios-opengles/game.xcodeproj` using Xcode.
 
 If using Vulkan copy:
 
@@ -103,4 +103,4 @@ If using Vulkan copy:
 	small3d/build/lib to small3d-boilerplate/ios/deps/lib
 	small3d/build/shaders to small3d-boilerplate/ios/game/resources1/shaders
 
-Then open the project in `small3d-boilerplate/ios/game.xcodeproj` using Xcode.
+Then open the project `small3d-boilerplate/ios/game.xcodeproj` using Xcode.
