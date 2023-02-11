@@ -20,6 +20,12 @@ It provides the following:
   #defines) in the `ios` folder. It runs on Vulkan, using MoltenVK.
 - iOS project (using the same source code with the necessary
   #defines) in the `ios-opengles` folder. It runs on OpenGL ES.
+
+A basic user interface is supported for the abovementioned platforms.
+The keyboard arrows and space work on the PC and corresponding
+visual controls are provided on mobile:
+
+![mobile interface](mobile-interface.png)
   
 It has been published separately from small3d because it 
 takes an opinionated approach on how to build small3d-based
@@ -66,9 +72,9 @@ OpenGL is used by default.
 Build small3d for android for your preferred API (Vulkan or OpenGL ES - see small3d README 
 file). Then copy:
 
-  small3d/build/include to small3d-boilerplate/android/app/deps/include
-  small3d/build/lib to small3d-boilerplate/android/app/deps/lib
-  small3d/build/shaders to small3d-boilerplate/android/app/src/main/assets/resources/shaders
+	small3d/build/include to small3d-boilerplate/android/app/deps/include
+	small3d/build/lib to small3d-boilerplate/android/app/deps/lib
+	small3d/build/shaders to small3d-boilerplate/android/app/src/main/assets/resources/shaders
 
 Depending on whether you are using OpenGL ES or Vulkan, rename (or copy) one of the files 
 CMakeListsOpenGLES.txt, CMakeListsVulkan.txt in small3d-boilerplate/android/app 
@@ -92,8 +98,8 @@ Then open the project in small3d-boilerplate/ios-opengles using Xcode.
 
 If using Vulkan copy:
 
-  small3d/build/include to small3d-boilerplate/ios/deps/include
-  small3d/build/lib to small3d-boilerplate/ios/deps/lib
-  small3d/build/shaders to small3d-boilerplate/ios/game/resources1/shaders
+	small3d/build/include to small3d-boilerplate/ios/deps/include
+	small3d/build/lib to small3d-boilerplate/ios/deps/lib
+	small3d/build/shaders to small3d-boilerplate/ios/game/resources1/shaders
 
 Then open the project in small3d-boilerplate/ios using Xcode.
