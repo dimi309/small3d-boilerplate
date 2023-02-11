@@ -27,7 +27,7 @@ visual controls are provided on mobile:
 
 ![mobile interface](mobile-interface.png)
   
-It has been published separately from small3d because it 
+The boilerplate has been published separately from small3d because it 
 takes an opinionated approach on how to build small3d-based
 projects. small3d on the other hand can be used in many ways.
 For example, if you use the library itself without this boilerplate
