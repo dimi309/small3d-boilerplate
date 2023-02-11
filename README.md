@@ -6,6 +6,10 @@ applications with the small3d game development library:
 
 https://github.com/dimi309/small3d
 
+The code is reasonably good. It has been extracted from
+the Islet Hell game, which has been published on [Steam](https://store.steampowered.com/app/2069750/Islet_Hell/),
+the [Apple App Store](https://apps.apple.com/us/app/islet-hell/id1631875184) and the [Android Play Store](https://play.google.com/store/apps/details?id=dimi309.islethelladroid).
+
 It provides the following:
 
 - A cross platform project in the root folder that can be built using
