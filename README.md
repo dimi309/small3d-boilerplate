@@ -48,6 +48,11 @@ you.
 
 # Building on PC (Windows, MacOS, Linux)
 
+For the time being, the boilerplate only works with conan 1.x.
+You can install it with pip for example, using this command:
+
+	pip install conan==1.59.0
+
 Add the [Barbarian package index](https://barbarian.bfgroup.xyz):
 
 	conan remote add barbarian-github https://barbarian.bfgroup.xyz/github
