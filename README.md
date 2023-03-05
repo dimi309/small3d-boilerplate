@@ -48,30 +48,39 @@ you.
 
 # Building on PC (Windows, MacOS, Linux)
 
-For the time being, the boilerplate only works with conan 1.x.
-You can install it with pip for example, using this command:
+Deploy my variation of the portaudio package for conan as a prerequisite:
 
-	pip install conan==1.59.0
+	git clone https://github.com/dimi309/portaudio-conan
+	cd portaudio-conan
+	conan export . --version=19.7.0
+	
+If you would like to use Vulkan, you will also need my variation of the
+vulkan-loader package (this is temporary until the conan center index
+verion gets fixed - it has a small bug):
 
-Add the [Barbarian package index](https://barbarian.bfgroup.xyz):
+	git clone https://github.com/dimi309/vulkan-loader-conan
+	cd vulkan-loader-conan
+	conan export . --version=1.3.239.0
+	
+And of course, small3d too:
 
-	conan remote add barbarian-github https://barbarian.bfgroup.xyz/github
+	git clone https://github.com/dimi309/small3d-conan
+	cd small3d-conan
+	conan export .
 	 
 Then clone this repository and build and run the game:
 
      git clone https://github.com/dimi309/small3d-boilerplate
      cd small3d-boilerplate
-     conan install . --build=missing
-     conan build .
+     conan build . --build=missing
      cd bin
      ./game
      # (Or just `game` on Windows)
 
-Use `conan install . -s cppstd=14 --build=missing` for compilers that do not support 
-C++14 or at least C++11 by default. Otherwise the build will fail.)
-	
-In order to build for Vulkan, execute `conan install . -o vulkan=True`. Otherwise, 
-OpenGL is used by default.
+This will build the game for OpenGL. In order to build it
+for vulkan, replace the build command by:
+
+	conan build . -o small3d/*:vulkan=True --build=missing
 
 # Building for Android
 
