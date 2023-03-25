@@ -54,14 +54,6 @@ Deploy my variation of the portaudio package for conan as a prerequisite:
 	cd portaudio-conan
 	conan export . --version=19.7.0
 	
-If you would like to use Vulkan, you will also need my variation of the
-vulkan-loader package (this is temporary until the conan center index
-verion gets fixed - it has a small bug):
-
-	git clone https://github.com/dimi309/vulkan-loader-conan
-	cd vulkan-loader-conan
-	conan export . --version=1.3.239.0
-	
 And of course, small3d too:
 
 	git clone https://github.com/dimi309/small3d-conan
@@ -76,11 +68,25 @@ Then clone this repository and build and run the game:
      cd bin
      ./game
      # (Or just `game` on Windows)
+	 
+---
+**NOTE**
 
-This will build the game for OpenGL. In order to build it
-for vulkan, replace the build command by:
+The conan small3d package no longer supports Vulkan. You can always 
+use Vulkan with small3d if you build small3d with plain cmake. You
+can do so using the scripts available in the [main small3d repository](https://github.com/dimi309/small3d).
 
-	conan build . -o small3d/*:vulkan=True --build=missing
+Since this boilerplate is "opinionated" and uses conan, I propose 
+that you use OpenGL on PC and no longer provide a way to deploy
+it with Vulkan.
+
+The boilerplate still supports Vulkan on mobile devices (but there
+again, my advice to you is to use OpenGL. It is a lot more resilient
+to driver quirks and other issues and not because I have not spent
+enough time programming the Vulkan renderer and trying to work around
+them).
+
+---
 
 # Building for Android
 
