@@ -81,7 +81,7 @@ that you use OpenGL on PC and no longer provide a way to deploy
 it with Vulkan.
 
 The boilerplate still supports Vulkan on mobile devices (but there
-again, my advice to you is to use OpenGL. It is a lot more resilient
+again, my advice to you is to use OpenGL ES. It is a lot more resilient
 to driver quirks and other issues and not because I have not spent
 enough time programming the Vulkan renderer and trying to work around
 them).
