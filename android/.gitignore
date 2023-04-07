@@ -17,5 +17,5 @@ local.properties
 /app/deps
 /app/src/main/assets/resources/shaders
 /app/release
-/app/CMakeLists.txt
+
 

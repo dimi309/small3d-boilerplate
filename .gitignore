@@ -21,5 +21,4 @@ Thumbs.db
 /bin
 /resources/shaders
 /ios/game/resources1/shaders
-/ios-opengles/game/resources1/shaders
 \.!*
