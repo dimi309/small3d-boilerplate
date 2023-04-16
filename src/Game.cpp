@@ -176,9 +176,7 @@ void initGraphics() {
 void resumeGraphics() {
   GameLoopAndInput::appActive = true;
   if (GameLoopAndInput::instantiated && GameLoopAndInput::deactivatedOnce) {
-#ifndef SMALL3D_OPENGL
-    r->setupVulkan();
-#endif
+
     // Not recreating OpenGL ES because on iOS its context seems to
     // remain intact on minimised apps
   }
@@ -188,14 +186,12 @@ void resumeGraphics() {
 #if defined(__ANDROID__)
 
 void resumeGraphics() {
-#ifndef SMALL3D_OPENGL
-  r->setupVulkan();
-#else
-  // The small3d Vulkan Renderer needed to keep track of created visual objects anyway
-  // so it recreates them when being reinitialised. The OpenGL (ES) Renderer needs the
-  // application to do that when resuming on Android, e.g. :
-  /*r->start(appName, 854, 480, 0.785f, 1.0f, 24.0f,
-           resourceDir + "/shaders/", 5000, 0);
+  r->start(appName, 854, 480, 0.785f, 1.0f, 24.0f,
+    resourceDir + "/shaders/", 5000, 0);
+
+  // The OpenGL (ES) Renderer needs visual objects to be recreated for
+  // resuming on Android, e.g. :
+  /*
   loadTextures();
 
   r->clearBuffers(indicator);
@@ -210,7 +206,7 @@ void resumeGraphics() {
   r->createRectangle(button, glm::vec3(-0.1f, 0.1f, 0.0f),
                      glm::vec3(0.1f, -0.1f, 0.0f));
   */
-#endif
+
   r->setBackgroundColour(skyColour);
   // May need to resume playing constant sounds here too
 }
@@ -224,17 +220,16 @@ void pauseGraphics() {
   GameLoopAndInput::appActive = false;
 
 #ifdef __ANDROID__
-  // Only stopping sounds here on Android because iOS seems to be
-  // pausing them itself correctly e.g. :
+  // Only stopping sounds here on Android e.g. :
   /*sndEngine->stop();
   sndGun->stop();
   sndExplosion->stop();
   sndSplash->stop();*/
+
+  // iOS seems to be pausing them itself so there is no need for this there
 #endif
 
-#if !defined(SMALL3D_OPENGL)
-  r->destroyVulkan();
-#elif defined(__ANDROID__)
+#if defined(__ANDROID__)
   // Only stopping OpenGL ES on Android because on iOS its context seems to
   // remain intact on minimised apps
   r->stop();
