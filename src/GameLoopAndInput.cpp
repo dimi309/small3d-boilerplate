@@ -308,7 +308,7 @@ void GameLoopAndInput::handle_cmd(android_app *pApp, int32_t cmd) {
         }
 
         // Needed for input coordinates to be interpreted
-        // correctly on Android (OpenGL ES and Vulkan)
+        // correctly on Android
         get_screen_info();
         appActive = true;
       }
