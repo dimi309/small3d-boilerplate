@@ -65,19 +65,19 @@ void render() {
 void renderControls() {
   // left
   r->render(button, glm::vec3(-0.8f, -0.8f, 0.0f), glm::vec3(0.0f), glm::vec4(0.0f),
-            latestInput.left > 0 ? "buttonLeftOn" : "buttonLeftOff", false);
+            latestInput.left > 0 ? "buttonLeftOn" : "buttonLeftOff", 0, false);
   // down
   r->render(button, glm::vec3(-0.6f, -0.8f, 0.0f), glm::vec3(0.0f), glm::vec4(0.0f),
-            latestInput.down > 0 ? "buttonDownOn" : "buttonDownOff", false);
+            latestInput.down > 0 ? "buttonDownOn" : "buttonDownOff", 0, false);
   // right
   r->render(button, glm::vec3(-0.4f, -0.8f, 0.0f), glm::vec3(0.0f), glm::vec4(0.0f),
-            latestInput.right > 0 ? "buttonRightOn" : "buttonRightOff", false);
+            latestInput.right > 0 ? "buttonRightOn" : "buttonRightOff", 0, false);
   // up
   r->render(button, glm::vec3(-0.6f, -0.6f, 0.0f), glm::vec3(0.0f), glm::vec4(0.0f),
-            latestInput.up > 0 ? "buttonUpOn" : "buttonUpOff", false);
+            latestInput.up > 0 ? "buttonUpOn" : "buttonUpOff", 0, false);
 
   r->render(button, glm::vec3(0.8f, 0.0f, 0.0f), glm::vec3(0.0f), glm::vec4(0.0f),
-            latestInput.space > 0 ? "buttonFireOn" : "buttonFireOff", false);
+            latestInput.space > 0 ? "buttonFireOn" : "buttonFireOff", 0, false);
 }
 
 #endif
