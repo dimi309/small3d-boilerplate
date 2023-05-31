@@ -20,6 +20,7 @@
 #endif
 
 #include "KeyInput.hpp"
+
 #if defined(__ANDROID__)
 #include <cstdint>
 #include <android_native_app_glue.h>
@@ -32,12 +33,6 @@
 #include <unistd.h>
 #include <small3d/Logger.hpp>
 #include "small3d_android.h"
-
-#ifndef SMALL3D_OPENGL
-extern "C" {
-#include "vulkan_helper.h"
-}
-#endif
 #endif
 
 class GameLoopAndInput {

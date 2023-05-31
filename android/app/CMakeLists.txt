@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.6.0)
-
+project(samplegame)
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 find_library(log-lib
@@ -9,7 +9,6 @@ set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -u ANativeActivity_o
 file(GLOB SOURCE_FILES ${CMAKE_CURRENT_SOURCE_DIR}/../../src/*.c*)
 file(GLOB HEADER_FILES ${CMAKE_CURRENT_SOURCE_DIR}/../../src/*.h*)
 
-add_compile_definitions(SMALL3D_OPENGL)
 add_compile_definitions(SMALL3D_OPENGLES)
 
 MESSAGE(STATUS "Sources: ${SOURCE_FILES} ${HEADER_FILES}")
