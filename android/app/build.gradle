@@ -4,7 +4,7 @@ plugins {
 
 android {
 
-    compileSdk 31
+    compileSdk 33
 
     buildFeatures {
         prefab true // For Oboe
@@ -13,9 +13,9 @@ android {
     defaultConfig {
         applicationId 'sample.game'
         minSdk 16 // set to 16 if building with OpenGL ES and to 26 if building with Vulkan
-        targetSdk 31
-        versionCode 39
-        versionName "1.696"
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
