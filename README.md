@@ -41,7 +41,7 @@ on your machine (e.g. gcc, Visual Studio, cmake, conan,
 Android studio, Xcode) depending on the build that interests
 you.
 
-# Building on PC (Windows, MacOS, Linux)
+# Building on PC (Windows, MacOS, Linux, FreeBSD)
 
 Deploy my variation of the portaudio package for conan as a prerequisite:
 
