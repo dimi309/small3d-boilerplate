@@ -22,6 +22,7 @@ typedef struct KeyInput {
     enter = false,
     esc = false,
     lshift = false,
+    prtscr = false,
     space = false;
 } KeyInput;
 

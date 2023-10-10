@@ -42,6 +42,13 @@ small3d::Model button;
 
 void process(KeyInput &keyInput) {
 
+#if _WIN32
+  if (keyInput.prtscr) {
+    r->screenCapture = true;
+    keyInput.prtscr = false;
+}
+#endif
+
 #if defined(__ANDROID__) || defined(SMALL3D_IOS)
   latestInput = keyInput;
 #endif

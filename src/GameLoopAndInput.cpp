@@ -55,6 +55,13 @@ void GameLoopAndInput::keyCallback(GLFWwindow* window, int key, int scancode, in
     input.space = false;
   if (key == GLFW_KEY_LEFT_SHIFT && action == GLFW_RELEASE)
     input.lshift = false;
+
+#ifdef _WIN32
+  if (key == GLFW_KEY_PRINT_SCREEN && action == GLFW_PRESS) {
+    input.prtscr = true;
+  }
+#endif
+
 }
 
 void GameLoopAndInput::init(GLFWwindow* window, void (*process_function)(KeyInput&), void (*render_function)()) {
