@@ -84,7 +84,6 @@ void GameLoopAndInput::run(const int fps) {
     auto seconds = getTimeInSeconds();
     auto prevSeconds = seconds;
     auto secondsInterval = 1.0 / fps;
-    auto zpos = -15.1f, zrot = 0.0f, xpos = 0.5f;
     
     while (!glfwWindowShouldClose(window) && !stop_) {
       glfwPollEvents();
