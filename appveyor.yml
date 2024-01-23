@@ -79,6 +79,6 @@ for:
   - cd small3d-conan
   - conan export .
   - cd ../small3d-boilerplate
-  - conan build . --build=missing
+  - conan build . -s compiler.cppstd=17 --build=missing
 
 build: off
