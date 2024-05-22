@@ -28,12 +28,6 @@ struct android_app *androidGameState;
 
 void render();
 
-void renderEnv();
-
-void write(std::string text, float elevation = 0.0f);
-
-void initGame(uint32_t level);
-
 small3d::Renderer *r;
 
 #if defined(__ANDROID__) || defined(SMALL3D_IOS)
