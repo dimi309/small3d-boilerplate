@@ -22,6 +22,7 @@ for:
   - pip install --upgrade pip
   - pip install conan
   - conan profile detect
+  - git checkout 1.8015.last.vulkan
 
   test_script:
   - cd ..
@@ -44,6 +45,7 @@ for:
   - pip install --upgrade pip
   - pip install conan
   - conan profile detect
+  - git checkout 1.8015.last.vulkan
   
   test_script:
   - cd ..
@@ -67,6 +69,7 @@ for:
   - python -m pip install --upgrade pip
   - pip install conan
   - conan profile detect
+  - git checkout 1.8015.last.vulkan
 
   
   test_script:
