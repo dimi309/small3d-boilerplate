@@ -2,14 +2,9 @@ small3d boilerplate
 ===================
 
 This repository is a basis for building games and other applications with the 
-small3d game development library. It only supports up to this version
-of small3d: https://github.com/dimi309/small3d/releases/tag/1.8015.last.vulkan
+small3d game development library:
 
-After cloning: https://github.com/dimi309/small3d
-
-... please make sure to check it out:
-
-	git checkout 1.8015.last.vulkan
+https://github.com/dimi309/small3d
 
 The code is reasonably good. It has been extracted from
 the Islet Hell game, which has been published on [Steam](https://store.steampowered.com/app/2069750/Islet_Hell/),
@@ -69,7 +64,14 @@ Then clone this repository and build and run the game:
      # (Or just `game` on Windows)
 	 
 
+
 # Building for Android
+
+After cloning: https://github.com/dimi309/small3d
+
+... please make sure to check out the last version that supported mobile platforms:
+
+	git checkout 1.8016.last.mobile
 
 Build small3d for android (see small3d README file). Then copy:
 
@@ -80,6 +82,12 @@ Build small3d for android (see small3d README file). Then copy:
 Open and build the project in `small3d-boilerplate/android` with Android studio.
 
 # Building for iOS
+
+After cloning: https://github.com/dimi309/small3d
+
+... please make sure to check out the last version that supported mobile platforms:
+
+	git checkout 1.8016.last.mobile
 
 Build small3d for ios (see small3d README file). Then, copy:
 
