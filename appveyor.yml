@@ -33,7 +33,7 @@ for:
   - cd small3d-conan
   - conan export .
   - cd ../small3d-boilerplate
-  - conan build . --build=missing -c tools.system.package_manager:mode=install -c tools.system.package_manager:sudo=True
+  - conan build . --build=missing -c tools.system.package_manager:mode=install -c tools.system.package_manager:sudo=True --version=1.8016
 
 -
   matrix:
@@ -55,7 +55,7 @@ for:
   - cd small3d-conan
   - conan export .
   - cd ../small3d-boilerplate
-  - conan build . -s compiler.cppstd=gnu17 --build=missing
+  - conan build . -s compiler.cppstd=gnu17 --version=1.8016 --build=missing
  
 -
   matrix:
@@ -78,6 +78,6 @@ for:
   - cd small3d-conan
   - conan export .
   - cd ../small3d-boilerplate
-  - conan build . -s compiler.cppstd=17 --build=missing
+  - conan build . -s compiler.cppstd=17 --version=1.8016 --build=missing
 
 build: off
