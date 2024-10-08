@@ -2,13 +2,11 @@ small3d boilerplate
 ===================
 
 This repository is a basis for building games and other applications with the 
-small3d game development library:
-
-https://github.com/dimi309/small3d
+small3d game development library ( https://github.com/dimi309/small3d ).
 
 The code is reasonably good. It has been extracted from
 the Islet Hell game, which has been published on [Steam](https://store.steampowered.com/app/2069750/Islet_Hell/),
-the [Apple App Store](https://apps.apple.com/us/app/islet-hell/id1631875184) and the [Android Play Store](https://play.google.com/store/apps/details?id=dimi309.islethelladroid).
+and formerly also on the Apple App Store and the Android Play Store.
 
 It provides the following:
 
@@ -52,7 +50,7 @@ And of course, small3d too:
 
 	git clone https://github.com/dimi309/small3d-conan
 	cd small3d-conan
-	conan export .
+	conan export . --version=1.8016
 	 
 Then clone this repository and build and run the game:
 
@@ -69,7 +67,8 @@ Then clone this repository and build and run the game:
 
 After cloning: https://github.com/dimi309/small3d
 
-... please make sure to check out the last version that supported mobile platforms:
+... please make sure to check out the last version that supported mobile 
+platforms:
 
 	git checkout 1.8016.last.mobile
 
@@ -85,7 +84,8 @@ Open and build the project in `small3d-boilerplate/android` with Android studio.
 
 After cloning: https://github.com/dimi309/small3d
 
-... please make sure to check out the last version that supported mobile platforms:
+... please make sure to check out the last version that supported mobile 
+platforms:
 
 	git checkout 1.8016.last.mobile
 

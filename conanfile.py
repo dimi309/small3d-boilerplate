@@ -5,7 +5,7 @@ import os
 
 class Small3dGameConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
-    requires = "small3d/master"
+    requires = "small3d/1.8016"
 
     def generate(self):
         deps = CMakeDeps(self)
