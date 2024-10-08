@@ -31,9 +31,9 @@ for:
   - cd ..
   - git clone https://github.com/dimi309/small3d-conan
   - cd small3d-conan
-  - conan export .
+  - conan export . --version=1.8016
   - cd ../small3d-boilerplate
-  - conan build . --build=missing -c tools.system.package_manager:mode=install -c tools.system.package_manager:sudo=True --version=1.8016
+  - conan build . --build=missing -c tools.system.package_manager:mode=install -c tools.system.package_manager:sudo=True
 
 -
   matrix:
@@ -53,9 +53,9 @@ for:
   - cd ..
   - git clone https://github.com/dimi309/small3d-conan
   - cd small3d-conan
-  - conan export .
+  - conan export . --version=1.8016
   - cd ../small3d-boilerplate
-  - conan build . -s compiler.cppstd=gnu17 --version=1.8016 --build=missing
+  - conan build . -s compiler.cppstd=gnu17 --build=missing
  
 -
   matrix:
@@ -76,8 +76,8 @@ for:
   - cd ..
   - git clone https://github.com/dimi309/small3d-conan
   - cd small3d-conan
-  - conan export .
+  - conan export . --version=1.8016
   - cd ../small3d-boilerplate
-  - conan build . -s compiler.cppstd=17 --version=1.8016 --build=missing
+  - conan build . -s compiler.cppstd=17 --build=missing
 
 build: off
