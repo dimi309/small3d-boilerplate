@@ -2,7 +2,10 @@ small3d boilerplate
 ===================
 
 This repository is a basis for building games and other applications with the 
-small3d game development library ( https://github.com/dimi309/small3d ).
+small3d game development library ( https://github.com/dimi309/small3d ). **It is
+referencing version 1.8016 of small3d, which was the last version supporting
+mobile devices. If you would like to use a more recent version you can reference
+small3d directly, or modify this project accordingly.**
 
 The code is reasonably good. It has been extracted from
 the Islet Hell game, which has been published on [Steam](https://store.steampowered.com/app/2069750/Islet_Hell/),
