@@ -13,7 +13,6 @@
 #include <small3d/Sound.hpp>
 #include <small3d/Time.hpp>
 
-
 void render();
 
 small3d::Renderer* r;
@@ -42,15 +41,7 @@ void init() {
 
 }
 
-
-void loadTextures() {
-}
-
-
 void initGraphics() {
-
-
-
 
 #if !defined(NDEBUG) && defined(WIN32)
   r = &small3d::Renderer::getInstance(appName, 1024, 768);
@@ -59,8 +50,6 @@ void initGraphics() {
 #endif
 
   r->setBackgroundColour(skyColour);
-
-  loadTextures();
 
 }
 

@@ -17,8 +17,6 @@ void (*GameLoopAndInput::process)(KeyInput& keyInput);
 void (*GameLoopAndInput::render)();
 bool GameLoopAndInput::stop_;
 
-
-
 GLFWwindow* GameLoopAndInput::window;
 
 void GameLoopAndInput::keyCallback(GLFWwindow* window, int key, int scancode, int action,
