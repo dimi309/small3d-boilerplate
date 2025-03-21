@@ -7,8 +7,8 @@ small3d game development library ( https://github.com/dimi309/small3d ).
 The code is reasonably good. It has been extracted from
 the Islet Hell game, which has been published on [Steam](https://store.steampowered.com/app/2069750/Islet_Hell/).
 
-It provides the following a cross platform project that can be built using 
-conan: https://conan.io/
+It provides a cross platform project that can be built using conan:
+https://conan.io/
 
 A basic user interface is provided that uses the keyboard arrows and space.
 
@@ -23,7 +23,7 @@ It is assumed that the necessary development tools are installed
 on your machine (e.g. gcc, Visual Studio, cmake, conan, Xcode) 
 depending on the build that interests you.
 
-# Building on PC (Windows, MacOS, Linux, FreeBSD)
+# Building
 
 Deploy my variation of the portaudio package for conan as a prerequisite:
 
